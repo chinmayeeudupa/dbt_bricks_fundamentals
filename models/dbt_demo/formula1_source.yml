@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: formula1_raw
+    schema: f1_raw
+    tables:
+      - name: CIRCUITS
+        identifier: CIRCUITS
+      - name: RESULTS
+        identifier: RESULTS

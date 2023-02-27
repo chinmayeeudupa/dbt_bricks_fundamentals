@@ -38,3 +38,11 @@ models:
       +materialized: view
     dbt_tutorial:
       +materialized: table
+    dbt_demo:
+      +materialized: table
+      raw:
+        +schema: f1_raw
+      processed:
+        +schema: f1_processed
+      presentation:
+        +schema: f1_presentation
