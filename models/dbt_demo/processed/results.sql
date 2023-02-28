@@ -3,7 +3,8 @@
     location_root='/mnt/myformula1dlake/processed',
     partition_by='raceId',
     unique_key=['resultId', 'raceId'],
-    file_format='delta'
+    file_format='delta',
+    persist_constraints=True
 ) }}
 
 {% set data_source = 'demo' %}

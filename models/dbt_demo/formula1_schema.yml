@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+  - name: results
+    meta:
+      constraints:
+        - name: id_greater_than_zero
+          condition: raceId > 0
+    columns:
+      - name: raceId
+        meta:
+          constraint: not_null
