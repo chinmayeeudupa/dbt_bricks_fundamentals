@@ -1,7 +1,11 @@
 {{ config(
     materialized='incremental',
     location_root='/mnt/myformula1dlake/processed',
-    file_format='delta'
+    file_format='delta',
+    tblproperties={
+        'delta.autoOptimize.optimizeWrite' : 'true',
+        'delta.autoOptimize.autoCompact' : 'true'
+    }
 ) }}
 
 {% set data_source = 'demo' %}
