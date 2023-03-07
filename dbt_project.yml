@@ -46,3 +46,6 @@ models:
         +schema: f1_processed
       presentation:
         +schema: f1_presentation
+    dbt_cloud_demo:
+        +materialized: table
+        

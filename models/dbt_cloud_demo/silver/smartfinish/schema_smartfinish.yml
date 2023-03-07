@@ -1,0 +1,10 @@
+
+version: 2
+
+models:
+  dbt_bricks:
+    dbt_cloud_demo:
+      silver:
+        55com:
+          +schema: silver_55com
+          

@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bronze_smartfinish
+    schema: bronze_smartfinish
+    tables:
+      - name: app_bundles
+      - name: app_users
