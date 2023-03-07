@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: bronze_55com
+    schema: bronze_55com
+    tables:
+      - name: gbu_daily_health
+      - name: gbu_daily_hygiene
