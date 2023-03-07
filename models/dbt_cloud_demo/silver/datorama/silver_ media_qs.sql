@@ -9,4 +9,4 @@
     )
 }}
 
-select * from {{ source('bronze_55com', 'silver_media_qs') }}
+select * from {{ source('bronze_datorama', 'media_qs') }}
