@@ -3,7 +3,8 @@
     config(
         materialized='incremental',
         file_format='delta',
-        alias='app_bundles'
+        alias='app_bundles',
+        partition_by='year',
         location_root='/mnt/myformula1dlake/processed'
     )
 }}
