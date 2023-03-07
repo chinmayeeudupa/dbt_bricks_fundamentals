@@ -48,4 +48,19 @@ models:
         +schema: f1_presentation
     dbt_cloud_demo:
         +materialized: table
-        
+        +file_format: delta
+        silver:
+          55com:
+            +schema: silver_55com
+          datorama:
+            +schema: silver_datorama
+          smartfinish:
+            +schema: silver_smartfinish
+        gold:
+          55com:
+            +schema: gold_55com
+          datorama:
+            +schema: gold_datorama
+          smartfinish:
+            +schema: gold_smartfinish
+            

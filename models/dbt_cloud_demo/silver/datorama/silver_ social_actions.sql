@@ -9,4 +9,4 @@
     )
 }}
 
-select * from {{ source('bronze_55com', 'silver_media_actions') }}
+select * from {{ source('bronze_datorama', 'social_actions') }}

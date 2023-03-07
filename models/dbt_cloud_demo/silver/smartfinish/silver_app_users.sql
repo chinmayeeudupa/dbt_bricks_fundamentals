@@ -8,4 +8,4 @@
     )
 }}
 
-select * from {{ source('bronze_55com', 'silver_app_users') }}
+select * from {{ source('bronze_smartfinish', 'app_users') }}
