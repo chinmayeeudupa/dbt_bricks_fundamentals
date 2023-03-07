@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bronze_dataroma
+    schema: bronze_dataroma
+    tables:
+      - name: media_clicks
+      - name: media_qs
+      - name: social_actions
