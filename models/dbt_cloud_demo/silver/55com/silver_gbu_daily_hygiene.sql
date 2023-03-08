@@ -2,7 +2,8 @@
 {{
     config(
         materialized='incremental',
-        file_format='delta',
+        file_format='parquet',
+        incremental_strategy='insert_overwrite',
         alias='gbu_daily_hygiene',
         location_root='/mnt/myformula1dlake/processed'
     )
