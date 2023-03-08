@@ -49,6 +49,7 @@ models:
     dbt_cloud_demo:
         +materialized: table
         +file_format: delta
+        +on_schema_change: "sync_all_columns"
         silver:
           55com:
             +schema: silver_55com
