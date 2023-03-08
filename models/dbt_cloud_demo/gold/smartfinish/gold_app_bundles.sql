@@ -9,4 +9,4 @@
 }}
 
 select * from {{ ref('silver_app_bundles') }}
---dbt build --select result:error+ --defer --state ./target
+
