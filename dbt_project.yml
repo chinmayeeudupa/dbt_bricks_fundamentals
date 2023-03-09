@@ -34,18 +34,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   dbt_bricks:
     # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
-    dbt_tutorial:
-      +materialized: table
-    dbt_demo:
-      +materialized: table
-      raw:
-        +schema: f1_raw
-      processed:
-        +schema: f1_processed
-      presentation:
-        +schema: f1_presentation
     dbt_cloud_demo:
         +materialized: table
         +file_format: delta
@@ -64,6 +52,18 @@ models:
             +schema: gold_datorama
           smartfinish:
             +schema: gold_smartfinish
+    example:
+      +materialized: view
+    dbt_tutorial:
+      +materialized: table
+    dbt_demo:
+      +materialized: table
+      raw:
+        +schema: f1_raw
+      processed:
+        +schema: f1_processed
+      presentation:
+        +schema: f1_presentation
 seeds:
   dbt_bricks:
     dbt_cloud_demo:
