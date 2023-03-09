@@ -64,4 +64,13 @@ models:
             +schema: gold_datorama
           smartfinish:
             +schema: gold_smartfinish
-            
+seeds:
+  dbt_bricks:
+    dbt_cloud_demo:
+      +enabled: true
+      +schema: default
+    
+tests:
+  dbt_bricks:
+    +enabled: true
+      

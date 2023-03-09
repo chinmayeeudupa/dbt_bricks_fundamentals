@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: silver_gbu_daily_health
+    tests:
+      - check_dropped_recs:
+            config:
+              severity: warn
+              warn_if: ">10"
