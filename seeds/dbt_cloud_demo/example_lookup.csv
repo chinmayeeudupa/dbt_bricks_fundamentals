@@ -1,0 +1,13 @@
+SOURSYSTEM,DISTR_CHAN,SALESORG,COMPANY_CODE,COUNTRY,COUNTRY_NAME,CURRENCY,COUNTRY_UOM,DIVISION,BUCKET_NAME,DAG_NAME,MAIL_GROUP,LAST_TRIGGERED_TIMESTAMP,SKIP_EXCEPTION_PATTERN,SKIP_FILE_PROCESSING_PATTERN,SALES_METHOD,INVENTORY_METHOD
+CA,99,SG01,SG01,SG,SINGAPORE,SGD,ST,CP,ND,ND,itt_developers@colpal.com,2022-04-19 03:02:24.092 -0400,desktop.ini|.ds_store,.*.xls|.*.xlsx,ND,ND
+CA,99,MA01,MA99,MA,MOROCCO,MAD,ST,CP,ND,ND,itt_developers@colpal.com,2022-04-19 03:02:24.092 -0400,desktop.ini|.ds_store,.*.xls|.*.xlsx,ND,ND
+CA,99,BN01,BN01,BN,BRUNEI,BND,ST,CP,ND,ND,itt_developers@colpal.com,2022-04-19 03:02:24.092 -0400,desktop.ini|.ds_store,.*.xls|.*.xlsx,ND,ND
+CA,99,KH02,KH01,KH,CAMBODIA,KHR,ST,CP,ND,ND,itt_developers@colpal.com,2022-04-19 03:02:24.092 -0400,desktop.ini|.ds_store,.*.xls|.*.xlsx,ND,ND
+CA,99,VN01,VN01,VN,VIETNAM,VND,ST,CP,ND,ND,itt_developers@colpal.com,2022-04-19 03:02:24.092 -0400,desktop.ini|.ds_store,.*.xls|.*.xlsx,ND,ND
+CA,99,MY02,MY02,MY,MALAYSIA,MYR,ST,CP,ND,ND,itt_developers@colpal.com,2022-04-19 03:02:24.092 -0400,desktop.ini|.ds_store,.*.xls|.*.xlsx,ND,ND
+CA,99,KH01,KH01,KH,CAMBODIA,KHR,ST,CP,ND,ND,itt_developers@colpal.com,2022-04-19 03:02:24.092 -0400,desktop.ini|.ds_store,.*.xls|.*.xlsx,ND,ND
+CA,99,TH01,THA1,TH,THAILAND,THB,ST,CP,ND,ND,itt_developers@colpal.com,2022-04-19 03:02:24.092 -0400,desktop.ini|.ds_store,.*.xls|.*.xlsx,ND,ND
+CA,99,LA01,LA01,LA,LAOS,LAK,ST,CP,ND,ND,itt_developers@colpal.com,2022-04-19 03:02:24.092 -0400,desktop.ini|.ds_store,.*.xls|.*.xlsx,ND,ND
+CA,99,IN01,IN01,IN,INDIA,INR,ST,CP,ND,ND,itt_developers@colpal.com,2022-04-19 03:06:44.437 -0400,desktop.ini|.ds_store,.*.xls|.*.xlsx,ND,ND
+CA,99,PH01,PH01,PH,PHILIPPINES,PHP,ST,CP,ND,ND,itt_developers@colpal.com,2022-04-19 03:06:44.437 -0400,desktop.ini|.ds_store,.*.xls|.*.xlsx,ND,ND
+LP,99,MX10,MX01,MX,MEXICO,MXP,ST,CP,cp_mexico-cp-saa-internal-sales-dev,cp_mexico-data-upload,itt_developers@colpal.com,2022-05-09 13:11:00.255 -0400,desktop.ini|.ds_store,.*.xls|.*.xlsx,ND,ND

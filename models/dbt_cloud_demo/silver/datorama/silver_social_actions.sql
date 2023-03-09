@@ -2,8 +2,9 @@
 {{
     config(
         materialized='incremental',
-        file_format='parquet',
-        incremental_strategy='insert_overwrite',
+        file_format='delta',
+        incremental_strategy='merge',
+        unique_key=['raceId', 'year'],
         alias='media_actions',
         partition_by='year',
         location_root='/mnt/myformula1dlake/processed'
