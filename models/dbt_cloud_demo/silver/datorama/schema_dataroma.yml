@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: silver_media_clicks
+    description: '{{ doc("clicks") }}'
+    docs:
+      show: true
+    columns:
+      - name: raceId
+        description: This is a unique identifier for the clicks
