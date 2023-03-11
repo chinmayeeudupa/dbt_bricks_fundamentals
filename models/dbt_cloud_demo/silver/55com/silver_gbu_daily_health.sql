@@ -5,8 +5,7 @@
         file_format='delta',
         incremental_strategy='merge',
         unique_key=['circuitId'],
-        alias='gbu_daily_health',
-        location_root='/mnt/myformula1dlake/processed'
+        alias='gbu_daily_health'
     )
 }}
 

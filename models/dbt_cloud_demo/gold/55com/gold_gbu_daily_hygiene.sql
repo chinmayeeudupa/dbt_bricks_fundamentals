@@ -2,10 +2,8 @@
 {{
     config(
         materialized='incremental',
-        file_format='delta',
         unique_key=['circuitId'],
-        alias='gbu_daily_hygiene',
-        location_root='/mnt/myformula1dlake/presentation'
+        alias='gbu_daily_hygiene'
     )
 }}
 
