@@ -5,7 +5,8 @@
         file_format='delta',
         incremental_strategy='merge',
         unique_key=['circuitId'],
-        alias='gbu_daily_hygiene'
+        alias='gbu_daily_hygiene',
+        persist_constraints=True
     )
 }}
 
