@@ -35,10 +35,11 @@ models:
   dbt_bricks:
     # Config indicated by + and applies to all files under models/example/
     dbt_cloud_demo:
-        +materialized: table
+        +materialized: incremental
         +file_format: delta
-        +on_schema_change: "sync_all_columns"
+        +on_schema_change: 'sync_all_columns'
         silver:
+          +location_root: '/mnt/dbtdemo1/processed'
           55com:
             +schema: silver_55com
           datorama:
@@ -46,6 +47,7 @@ models:
           smartfinish:
             +schema: silver_smartfinish
         gold:
+          +location_root: '/mnt/dbtdemo1/presentation'
           55com:
             +schema: gold_55com
           datorama:
