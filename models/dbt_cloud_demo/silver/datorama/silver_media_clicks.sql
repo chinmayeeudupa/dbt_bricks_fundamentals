@@ -4,7 +4,11 @@
         materialized="incremental",
         incremental_strategy="merge",
         unique_key=['raceId', 'year'],
-        alias="media_clicks"
+        alias="media_clicks",
+        tblproperties={
+            'delta.autoOptimize.optimizeWrite' : 'true',
+            'delta.autoOptimize.autoCompact' : 'true'
+        }
     )
 }}
 ----partition_by='year'

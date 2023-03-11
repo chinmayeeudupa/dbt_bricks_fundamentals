@@ -2,8 +2,18 @@ version: 2
 
 models:
   - name: silver_gbu_daily_health
+    description: This table contains clickstream events from 55com
     tests:
       - check_dropped_recs:
             config:
               severity: warn
               warn_if: ">10"
+  - name: silver_gbu_daily_hygiene
+    meta:
+      constraints:
+        - name: id_greater_than_zero
+          condition: circuitId > 0
+    columns:
+      - name: circuitId
+        meta:
+          constraint: not_null
