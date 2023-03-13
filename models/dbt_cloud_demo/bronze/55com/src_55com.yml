@@ -5,4 +5,8 @@ sources:
     schema: bronze_55com
     tables:
       - name: gbu_daily_health
+        freshness:
+          warn_after: {count: 6, period: hour}
+          error_after: {count: 12, period: hour}
+        loaded_at_field: ingestion_date
       - name: gbu_daily_hygiene
