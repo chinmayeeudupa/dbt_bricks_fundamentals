@@ -9,8 +9,15 @@
     )
 }}
 
+{% set column_names = dbt_utils.get_filtered_columns_in_relation(from=source('bronze_55com', 'gbu_daily_health'), except=["ingestion_date"]) %}
+
 with cte_src as (
-    select * from {{ source('bronze_55com', 'gbu_daily_health') }}
+    select
+    {% for column_name in column_names %}
+        {{column_name}}
+        {%- if not loop.last %},{% endif %}
+    {% endfor %}
+    from {{ source('bronze_55com', 'gbu_daily_health') }}
 
     {% if is_incremental() %}
         -- this filter will only be applied on an incremental run
